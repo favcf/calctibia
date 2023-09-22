@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: gray;
+    padding: 3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cask{
+    text-align: center;
+}
+.cask h1,h2{
+    font-size: 2em;
+    color: #eee;
+    text-shadow: 1px 1px 5px #eee;
+}
+.cask label{
+    margin: 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cask label p{
+    font-size:1.2em ;
+    border-bottom:solid 2px black ;
+}
+label input, label select{
+    font-size: 1em;
+    padding: 0.2em 0;
+    border: solid 2px transparent;
+    border-radius: 15px;
+    margin: 0.5em 0;
+    outline: transparent 1px solid;
+    text-align: center;
+}
+.cask label input:focus{
+    border: solid 2px blue;
+}
+.waste button{
+    padding: 1em;
+    border-radius: 25px;
+    font-weight: bold;
+}
+.cask table tr{
+    box-shadow: 1px 1px 5px #eee;
+}
+.cask table,tr,td{
+    border: solid 2px #eee;
+    border-collapse: collapse;
+}
+.cask table tr td{
+    text-align: center;
+    width: 100px;
+    line-height: 2em;
+    font-weight: bold;
+}
+
+.waste{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    padding: 1em;
+}
+
+.waste label{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em 0;
+    padding: 0.25em;
+    align-items: center;
+}
+
+.waste-resultados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.waste-resultados label{
+    margin: 0.5em 0;
+    border-bottom: solid 2px #eee;
+    width: 100%;
+}
+
+
+
+
+

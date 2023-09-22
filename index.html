@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Calculadora - Tibia</title>
+</head>
+<body>
+	<div class="container">
+		<div class="waste">
+			<h2>Calculadora de Waste</h2>
+
+			<label for="coin">
+				<p>Preço da Coin (Unidade)</p>
+				<input type="text" name="coin" id="coin" >
+			</label>
+
+				<label for="potVida">
+					Potions de Vida
+					<input type="text" name="vida" id="vida">
+					<span>Tipo</span>
+					<select name="tipoPot" id="tipoVida">
+						<option value="0">Nenhum</option>
+						<option value="1">Health Potion</option>
+						<option value="2">Strong Health Potion</option>
+						<option value="3">Great Health Potion</option>
+						<option value="4">Ultimate Health Potion</option>
+						<option value="5">Supreme Health Potion</option>
+					</select>
+				</label>
+	
+				<label for="potMana">
+					Potions de Mana
+					<input type="text" name="mana" id="mana">
+					<span>Tipo</span>
+					<select name="tipoMana" id="tipoMana">
+						<option value="0">Nenhum</option>
+						<option value="1">Mana Potion</option>
+						<option value="2">Strong Mana Potion</option>
+						<option value="3">Great Mana Potion</option>
+						<option value="4">Ultimate Mana Potion</option>
+					</select>
+				</label>
+	
+				<label for="spirit">
+					Potions de Spirit
+					<input type="text" name="spirit" id="spirit">
+					<span>Tipo</span>
+					<select name="tipoSpirit" id="tipoSpirit">
+						<option value="0">Nenhum</option>
+						<option value="1">Great Spirit Potion</option>
+						<option value="2">Ultimate Spirit Potion</option>
+					</select>
+				</label>
+	
+				<label for="runas" >
+					Quantidade de Runas
+					<input type="text" name="runas" id="runas">
+					<span>Tipo</span>
+					<select name="tipoRuna" id="tipoRuna">
+						<option value="0">Nenhuma</option>
+						<option value="1">Avalanche / Great Fireball</option>
+						<option value="2">Thunderstorm / Stone Shower</option>
+					</select>
+				</label>	
+				<button onclick="calcule()">Calcular</button>
+		</div>
+
+		<div class="cask">
+			<h1>
+				Tibia
+			</h1>
+			<h2>
+				Calculadora de Cask
+			</h2>
+	
+
+	
+			<div class="resultados">
+				<table>
+					<thead>
+						<tr>
+							<td>Potions</td>
+							<td>Life</td>
+							<td>Mana</td>
+							<td>Spirit</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Pequena</td>
+							<td id="hp"></td>
+							<td id="mp"></td>
+						</tr>
+						<tr>
+							<td>Strong</td>
+							<td id="shp"></td>
+							<td id="smp"></td>
+						</tr>
+						<tr>
+							<td>Great</td>
+							<td id="ghp"></td>
+							<td id="gmp"></td>
+							<td id="gsp"></td>
+						</tr>
+						<tr>
+							<td>Ultimate</td>
+							<td id="uhp"></td>
+							<td id="ump"></td>
+							<td id="usp"></td>
+						</tr>
+						<tr>
+							<td>Supreme</td>
+							<td id="sshp"></td>
+							<td id=""></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+
+		<div class="waste-resultados">
+			<h2>Total de gastos</h2>
+			<label for="">Health Potion
+				<p for="" class="vida"></p>
+			</label>
+			<label for="">Mana Potion
+				<p for="" class="mana"></p>
+			</label>
+			<label for="">Spirit Potion
+				<p for="" class="spirit"></p>
+			</label>
+			<label for="">Runas
+				<p for="" class="runas"></p>
+			</label>
+			<label for="">Gasto Total
+				<p for="" class="total"></p>
+			</label>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/calcular.js"></script>
+
+</body>
+</html>
